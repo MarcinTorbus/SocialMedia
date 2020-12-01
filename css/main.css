@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,
+body {
+  background-color: #eff2f9;
+}
+#home {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  background: white;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 10px 41px -17px rgba(84, 88, 247, 1);
+}
+.box .background-image {
+  background: url("https://pix6.agoda.net/hotelImages/5871009/-1/cc6a9504ad5eddf5c7e54f4f97b99922.jpg?s=1024x768");
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: none;
+  height: 200px;
+}
+.box .content-area {
+  padding: 20px;
+}
+.box .content-area .user-image {
+  height: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box .content-area .user-image .circle {
+  background: url("https://media-exp1.licdn.com/dms/image/C4D03AQGZLoZx3b038w/profile-displayphoto-shrink_100_100/0?e=1611792000&v=beta&t=DQk-EiEOp4twhzZKlTQ2o2ivW6JSEmRZSsJMlxoj0Gs");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: none;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  position: absolute;
+  top: -75px;
+  box-shadow: 0 0 41px -17px rgba(84, 88, 247, 1);
+}
+.box .content-area .info-section .name {
+  font-size: 2rem;
+  text-align: center;
+}
+.box .content-area .info-section .position {
+  font-size: 0.8rem;
+  font-family: sans-serif;
+  color: grey;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.contact-section #follow-button {
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  background: #5458f7;
+  border: 1px solid white;
+  padding: 10px 40px;
+  color: white;
+  border-radius: 5px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.box .contact-section .email-button {
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  background: white;
+  border: 1px solid #f2f2f2;
+  padding: 10px 20px;
+  color: #5758f7;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.box .contact-section .email-button .fa-paper-plane {
+  margin-right: 10px;
+}
+#social-media-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#social-media-section.active {
+  height: 50px;
+}
+#social-media-section a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background: #eeeefe;
+  margin-right: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #5458f7;
+  position: relative;
+}
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  #home {
+    padding: 0 20px;
+  }
+  .box {
+    height: 95vh;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 320px) {
+  .contact-section #follow-button {
+    font-size: 0.7rem;
+  }
+  .box .contact-section .email-button {
+    font-size: 0.7rem;
+  }
+}
